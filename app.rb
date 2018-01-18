@@ -52,7 +52,7 @@ session[:foo] = 'hello'
   end
 
   get '/logout' do
-    session[:id] = []
+    session[:id] = {}
     "Session has now been cleared. session content: #{session.inspect}. Continue on to the '/finish' line!"
   end
 
